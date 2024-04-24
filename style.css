@@ -265,6 +265,7 @@ LANDING PAGE
   display: flex;
 }
 
+
 .social__link {
   background-color: #003caa;
   color: #fff;
@@ -734,6 +735,7 @@ footer {
 /* Shapes */
 .shape {
   position: fixed;
+  z-index: 0;
 }
 
 /* Shapes on the first row */
@@ -841,7 +843,9 @@ footer {
 
   .shape {
     scale: 0.8;
+    display: none;
   }
+  
 }
 
 /* Small phones */
@@ -873,12 +877,22 @@ footer {
   .shape {
     scale: 0.8;
     opacity: 0.2;
+    display: none;
   }
   .shape--0 {
     top: 15%;
     left: 5%;
     height: 15vh; 
     width: 5vw;
-    scale: 4.5;
+    scale: 2.5;
+    z-index: -1;
+  }
+
+  .social__link {
+    padding: 4px;
+    width: 30px;
+    height: 30px;
+    z-index: 100;
+    
   }
 }

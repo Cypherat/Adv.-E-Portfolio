@@ -52,7 +52,7 @@ function contact(event) {
       );
     });
 }
-// toggle Modal
+
 function toggleModal() {
   if (isModalOpen) {
     isModalOpen = false;
@@ -61,3 +61,17 @@ function toggleModal() {
   isModalOpen = true;
   document.body.classList += " modal--open";
 }
+
+// Event listeners for click events
+document.querySelector(".nav__link").addEventListener("click", toggleModal);
+document.querySelector(".click").addEventListener("click", toggleContrast);
+document.querySelector(".form__submit").addEventListener("click", contact);
+
+// Event listeners for touch events
+document.querySelector(".nav__link").addEventListener("touchstart", toggleModal);
+document.querySelector(".click").addEventListener("touchstart", toggleContrast);
+document.querySelector(".form__submit").addEventListener("touchstart", contact);
+
+// Event listener for touch events to move background
+document.addEventListener("touchstart", moveBackground);
+
