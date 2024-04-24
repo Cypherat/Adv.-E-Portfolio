@@ -94,8 +94,8 @@ textarea:focus {
 
 .click__mail {
   display: flex;
-  justify-content: center;
-  position: absolute;
+  justify-content: start;
+  align-items: start;
   cursor: pointer;
   transition: all 300ms ease;
 }
@@ -107,6 +107,7 @@ textarea:focus {
 .click__mail:active {
   transform: scale(0.8);
 }
+
 
 .click:hover {
   transform: scale(1.1);
@@ -617,7 +618,7 @@ PROJECTS
 
 /* this is to blur the img by hover  */
 
-.project__wrapper:hover .project__img {
+.project__wrapper:hover .project__img, .project__wrapper.touch .project__img {
   transform: scale(1.07);
   filter: blur(5px);
 }
