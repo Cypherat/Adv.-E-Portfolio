@@ -826,7 +826,7 @@ footer {
 
 @media (max-width: 768px) {
   .title {
-    font-size: 80px;
+    font-size: 56px;
   }
   .header__para {
     font-size: 20px;
